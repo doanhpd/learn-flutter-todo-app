@@ -1,16 +1,16 @@
-abstract class Failures {
+abstract class Failure {
   final String message;
-  Failures(this.message);
+  Failure(this.message);
 }
 
-class ServerFailure extends Failures {
+class ServerFailure extends Failure {
   ServerFailure(String message) : super(message);
 }
 
-class LocalDatabaseFailure extends Failures {
+class LocalDatabaseFailure extends Failure {
   LocalDatabaseFailure(String message) : super(message);
 }
 
-class CacheFailure extends Failures {
+class CacheFailure extends Failure {
   CacheFailure(String message) : super(message);
 }
